@@ -154,7 +154,8 @@ writer.writerow([country_name, job_title, job_company, job_location, wfh, job_sa
 
 ## Próximos pasos
 Para mí, el próximo paso es modelar el dataset que acabamos de obtener en vistas de crear un tablero en Power BI que permita visualizar de forma integral y relevante todos estos datos.
-Mientras tanto, te animo a que utilices esta base para hacer el scraping que se ajuste a tus necesidades modificando los filtros a tu gusto. Además, ten en cuenta que LinkedIn puede ofrecer  opciones para las búsquedas que yo no exploré y pueden resultarte útiles.
+Mientras tanto, te animo a que utilices esta base para hacer el scraping que se ajuste a tus necesidades modificando los filtros a tu gusto. Además, hay que tener en cuenta que LinkedIn puede ofrecer opciones para las búsquedas que yo no exploré y pueden resultar útiles en otras circunstancias.
+Por último, aclaro que este script fue escrito y probado en Enero del año 2023. Si el sitio de LinkedIn cambiara con posterioridad, será necesario actualizarlo para ajustarse al nuevo modelo.
 
 
 [**Link al repositorio**](https://github.com/JuanPabloVeliz/LinkedIn_DA)
