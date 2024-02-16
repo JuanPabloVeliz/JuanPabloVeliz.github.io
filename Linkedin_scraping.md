@@ -1,4 +1,4 @@
-# Obteniendo el listado de búsquedas laborales haciendo Web Scraping en LinkedIn
+# Web Scraping en LinkedIn
 
 Este artículo describe las primeras tareas de un proyecto más grande. En esta primera parte usamos un scrapper escrito en Python aprovechando la librería BeautifulSoup para extraer las búsquedas activas en LinkedIn para el puesto de Analista de Datos en varios países de Latam + USA. Esto nos permite en poco tiempo obtener un dataset con los datos precisos más de 1.000 vacantes relevantes. 
 A continuación explico las secciones más interesantes que aplican particularmente al scraping en LinkedIn. Te recomiendo que sigas esta lectura con el script completo a mano, ya que en este artículo sólo cito algunos bloques.
@@ -157,6 +157,5 @@ Para mí, el próximo paso es modelar el dataset que acabamos de obtener en vist
 Mientras tanto, te animo a que utilices esta base para hacer el scraping que se ajuste a tus necesidades modificando los filtros a tu gusto. Además, ten en cuenta que LinkedIn puede ofrecer  opciones para las búsquedas que yo no exploré y pueden resultarte útiles.
 
 
-[Link al repositorio](https://github.com/JuanPabloVeliz/LinkedIn_DA)
+[**Link al repositorio**](https://github.com/JuanPabloVeliz/LinkedIn_DA)
 
-[Conectemos en LinkedIn](https://www.linkedin.com/in/juan-pablo-veliz/)
