@@ -186,4 +186,9 @@ jobs = jobs.iloc[:,:11]
 jobs.to_csv(r"Datasets\jobs.csv", sep=",", index_label="job_id")
 ```
 
+
+## Adelanto del Tablero
+
+> En breve coy a actualizar esta sección con imágenes del tablero
+
 [**Link al repositorio**](https://github.com/JuanPabloVeliz/LinkedIn_DA)
