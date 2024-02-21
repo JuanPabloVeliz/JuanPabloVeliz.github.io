@@ -195,6 +195,6 @@ En una solapa general tenemos un panorama de todas las búsquedas relevadas, y l
 
 En una solapa aparte, analizando las habilidades mencionadas en las descripciones de las búsquedas claramente destacan SQL, Python, PowerBI, Excel y Tableau como las más solicitadas. También podemos filtrar por tipo de habilidad para encontrar dentro de cada categoría cuáles son las tecnologías más relevantes para las empresas con búsquedas activas.
 
-<img src="images\Tablero_skills.PNG" alt="Tablero - Solapa Skills" style="height: 570px; width:1000px;"/>
+<img src="images\Tablero_skills.PNG" alt="Tablero - Solapa Skills" style="width:80%;"/>
 
 [**Link al repositorio**](https://github.com/JuanPabloVeliz/LinkedIn_DA)
