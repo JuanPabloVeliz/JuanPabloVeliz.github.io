@@ -189,9 +189,11 @@ jobs.to_csv(r"Datasets\jobs.csv", sep=",", index_label="job_id")
 
 ## Resultado Final
 Con el tablero terminado, podemos indagar sobre las búsquedas de Analista de Datos.
+En una solapa general tenemos un panorama de todas las búsquedas relevadas, y las podemos filtrar según el sector o industria, según el país o el tipo de presencialidad. También tenemos un ranking rápido de cuáles son las empresas con mayor cantidad de búsquedas activas.
 
 <img src="images\Tablero_general.PNG" alt="Tablero - Solapa General" style="height: 570px; width:1000px;"/>
-<br>
+
+En una solapa aparte, analizando las habilidades mencionadas en las descripciones de las búsquedas claramente destacan SQL, Python, PowerBI, Excel y Tableau como las más solicitadas. También podemos filtrar por tipo de habilidad para encontrar dentro de cada categoría cuáles son las tecnologías más relevantes para las empresas con búsquedas activas.
 
 <img src="images\Tablero_skills.PNG" alt="Tablero - Solapa Skills" style="height: 570px; width:1000px;"/>
 
