@@ -190,9 +190,9 @@ jobs.to_csv(r"Datasets\jobs.csv", sep=",", index_label="job_id")
 ## Resultado Final
 Con el tablero terminado, podemos indagar sobre las búsquedas de Analista de Datos.
 
-<img src="images\Tablero_general.PNG" alt="Tablero - Solapa General" style="height: 285px; width:500px;"/>
+<img src="images\Tablero_general.PNG" alt="Tablero - Solapa General" style="height: 570px; width:1000px;"/>
 <br>
 
-<img src="images\Tablero_skills.PNG" alt="Tablero - Solapa Skills" style="height: 285px; width:500px;"/>
+<img src="images\Tablero_skills.PNG" alt="Tablero - Solapa Skills" style="height: 570px; width:1000px;"/>
 
 [**Link al repositorio**](https://github.com/JuanPabloVeliz/LinkedIn_DA)
