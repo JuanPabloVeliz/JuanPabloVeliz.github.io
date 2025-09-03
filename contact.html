@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	
+	<title>Juan Pablo Veliz - Analista y Científico de Datos | Excel, PowerBI, SQL, Python</title>
+
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	
+	<!-- Bootstrap -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<!-- Icon font -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/styles.css">
+
+	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+</head>
+<body>
+
+<header id="header">
+	<div id="head" class="parallax" parallax-speed="2">
+		<h1 id="logo" class="text-center">
+			<img class="img-circle" src="assets/images/jp.png" alt="">
+			<span class="title">Juan Pablo Veliz</span>
+			<span class="tagline">Analista y Científico de Datos - Especialista en Finanzas<br>
+				<a href="">velizjp@gmail.com</a></span>		
+			</h1>
+	</div>
+
+	<nav class="navbar navbar-default navbar-sticky">
+		<div class="container-fluid">
+			
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			</div>
+			
+			<div class="navbar-collapse collapse">
+				
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Inicio</a></li>
+					<li><a href="about.html">Sobre Mí</a></li>
+					<!--<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">More Pages <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="sidebar-left.html">Left Sidebar</a></li>
+							<li><a href="sidebar-right.html">Right Sidebar</a></li>
+							<li><a href="single.html">Blog Post</a></li>
+						</ul>
+					</li>
+					<li><a href="blog.html">Blog</a></li> -->
+					<li><a href="contact.html">Contacto</a></li>
+				</ul>
+			
+			</div><!--/.nav-collapse -->			
+		</div>	
+	</nav>
+</header>
+
+<main id="main">
+
+	<div class="container">
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <div id="respond">
+                <h3 id="reply-title">Enviame tu mensaje</h3>
+                <form action="https://formspree.io/f/mblaldrb" method="POST" id="commentform">
+                    <div class="form-group">
+                        <label for="inputName">Nombre</label>
+                        <input type="text" class="form-control" id="inputName" name="nombre" placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail">Email <i class="text-danger">*</i></label>
+                        <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Tu email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputWeb">Empresa</label>
+                        <input type="text" class="form-control" id="inputWeb" name="website" placeholder="Tu empresa">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputComment">Comentario</label>
+                        <textarea class="form-control" id="inputComment" name="mensaje" rows="6" placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8"></div>
+                        <div class="col-md-4 text-right">
+                            <button type="submit" class="btn btn-action">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+				<div id="form-success" style="display:none; margin-top:15px;" class="alert alert-success">
+                    ✅ ¡Gracias por tu mensaje! Te responderé pronto.
+                </div>
+                <div id="form-error" style="display:none; margin-top:15px;" class="alert alert-danger">
+                    ❌ Ocurrió un error. Por favor, intenta de nuevo.
+                </div>
+            </div> <!-- /respond -->
+        </div>
+    </div> <!-- /row comments -->
+	<br>
+</div> <!-- /container -->
+
+<script>
+document.getElementById("commentform").addEventListener("submit", async function(event) {
+    event.preventDefault(); // evita que recargue la página
+
+    const form = event.target;
+    const data = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: data,
+            headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+            form.reset(); // limpia el form
+            document.getElementById("form-success").style.display = "block";
+            document.getElementById("form-error").style.display = "none";
+        } else {
+            document.getElementById("form-error").style.display = "block";
+            document.getElementById("form-success").style.display = "none";
+        }
+    } catch (error) {
+        document.getElementById("form-error").style.display = "block";
+        document.getElementById("form-success").style.display = "none";
+    }
+});
+</script>
+
+</main>
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-3 widget">
+			</div>
+
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Contacto</h3>
+				<div class="widget-body">
+					<p>+549 2477 369174<br>
+						<a href="mailto:velizjp@gmail.com">velizjp@gmail.com</a><br>
+						<br>
+						Pergamino, Buenos Aires, Argentina.
+					</p>	
+				</div>
+			</div>
+
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Seguime</h3>
+				<div class="widget-body">
+					<p class="follow-me-icons">
+						<a href="https://www.linkedin.com/in/juan-pablo-veliz/"><i class="fa fa-linkedin fa-2"></i></a>
+						<a href="https://github.com/JuanPabloVeliz"><i class="fa fa-github fa-2"></i></a>
+					</p>
+				</div>
+			</div>
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+<footer id="underfooter">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p>Pergamino, Buenos Aires, Argentina. </p>
+				</div>
+			</div>
+
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p class="text-right">
+						Copyright &copy; 2025, Juan Pablo Veliz<br> 
+						Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> </p>
+				</div>
+			</div>
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/template.js"></script>
+</body>
+</html>
